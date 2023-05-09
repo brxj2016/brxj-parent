@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.brxj</groupId>
+        <artifactId>brxj-parent</artifactId>
+        <version>2023.1.0</version>
+    </parent>
+
+    <artifactId>brxj-consumer</artifactId>
+    <version>2023.1.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>${brxj.jdk.version}</maven.compiler.source>
+        <maven.compiler.target>${brxj.jdk.version}</maven.compiler.target>
+        <project.build.sourceEncoding>${brxj.global.encode}</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- brxj-base -->
+        <dependency>
+            <groupId>com.brxj</groupId>
+            <artifactId>brxj-base</artifactId>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- spring-boot 参数校验- -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

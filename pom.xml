@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.brxj</groupId>
+    <artifactId>brxj-parent</artifactId>
+    <version>2023.1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>brxj-base</module>
+        <module>brxj-provider</module>
+        <module>brxj-consumer</module>
+    </modules>
+
+    <properties>
+        <brxj.version>1.0-SNAPSHOT</brxj.version>
+        <brxj.jdk.version>17</brxj.jdk.version>
+        <brxj.global.encode>UTF-8</brxj.global.encode>
+
+        <brxj.bom.version>2023.1.0</brxj.bom.version>
+        <brxj.dependencies.version>2023.1.0</brxj.dependencies.version>
+
+        <maven.compiler.source>${brxj.jdk.version}</maven.compiler.source>
+        <maven.compiler.target>${brxj.jdk.version}</maven.compiler.target>
+        <project.build.sourceEncoding>${brxj.global.encode}</project.build.sourceEncoding>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- brxj-bom -->
+            <dependency>
+                <groupId>com.brxj</groupId>
+                <artifactId>brxj-bom</artifactId>
+                <version>${brxj.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- brxj-dependencies -->
+            <dependency>
+                <groupId>com.brxj</groupId>
+                <artifactId>brxj-dependencies</artifactId>
+                <version>${brxj.dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

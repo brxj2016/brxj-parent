@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.brxj</groupId>
+    <artifactId>brxj-bom</artifactId>
+    <version>2023.1.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- 版本控制 -->
+        <brxj.base.version>2023.1.0</brxj.base.version>
+        <brxj.consumer.version>2023.1.0</brxj.consumer.version>
+        <brxj.provider.version>2023.1.0</brxj.provider.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- brxj-base 版本控制 -->
+            <dependency>
+                <groupId>com.brxj</groupId>
+                <artifactId>brxj-base</artifactId>
+                <version>${brxj.base.version}</version>
+            </dependency>
+
+            <!-- brxj-consumer 版本控制 -->
+            <dependency>
+                <groupId>com.brxj</groupId>
+                <artifactId>brxj-consumer</artifactId>
+                <version>${brxj.consumer.version}</version>
+            </dependency>
+
+            <!-- brxj-provider 版本控制 -->
+            <dependency>
+                <groupId>com.brxj</groupId>
+                <artifactId>brxj-provider</artifactId>
+                <version>${brxj.provider.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

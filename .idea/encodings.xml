@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/brxj-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-bom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-dependencies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-with/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brxj-with/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
